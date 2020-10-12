@@ -1,0 +1,23 @@
+{
+    "manifest_version": 2,
+    "name": "web-whats-audio-2x",
+    "version": "0.0.0.1",
+    "description": "Extension for increase whatsweb playback speed.",
+    "icons": {
+        "128": "icons/128.png",
+        "32": "icons/32.png",
+        "16": "icons/16.png"
+    },
+    
+    "browser_action": {
+        "default_icon": "icons/128.png",
+        "default_title": "Whats speed Extension"
+    },
+
+    "content_scripts": [
+        {
+            "matches": ["https://web.whatsapp.com/*"],
+            "js": ["content.js"]
+        }
+    ]
+}
